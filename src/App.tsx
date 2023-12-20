@@ -4,6 +4,7 @@ import SearchAlbum from './components/SearchAlbum';
 import Album from './components/Album';
 import Layout from './components/Layout';
 
+
 function App() {
   return (
     <Routes>
