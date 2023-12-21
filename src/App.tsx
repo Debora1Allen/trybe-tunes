@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Login from './components/login/Login';
-import SearchAlbum from './components/SearchAlbum';
+import SearchAlbum from './components/search/SearchAlbum';
 import Album from './components/Album';
 import Layout from './components/Layout';
 

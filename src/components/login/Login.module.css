@@ -36,7 +36,7 @@
   .input {
     width: 400px;
     height: 40px;
-    border: 1px solid #ccc;
+    border: 1px solid #003BE5;
     border-radius: 100px;
     margin-bottom: 10px;
     text-align: center;
@@ -72,3 +72,36 @@
     margin-top: 10px;
   }
   
+  .loadingText {
+    margin-right: 10px; 
+    color: #003BE5; 
+  }
+
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.loadingDots {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #003BE5; 
+  border-radius: 50%;
+  animation: loadingAnimation 1s infinite ease-in-out;
+}
+
+@keyframes loadingAnimation {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.5);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+}

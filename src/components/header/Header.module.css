@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .linkIcon {
+    margin-right: 10px;
+  }
+  
+  .userSection {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  

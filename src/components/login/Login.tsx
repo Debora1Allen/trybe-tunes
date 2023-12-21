@@ -51,7 +51,14 @@ function Login() {
           Entrar
         </button>
       </form>
-      {isLoading && <p className={ styles.loading }>Carregando...</p>}
+      {isLoading && (
+        <div className={styles.loadingContainer}>
+          <div className={styles.loadingDots}></div>
+          <div className={styles.loadingDots}></div>
+          <div className={styles.loadingDots}></div>
+          <div className={styles.loadingText}>Carregando</div>
+        </div>
+      )}
     </div>
   );
 }
