@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../../assets/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background: linear-gradient(123.66deg, #003BE5 12.08%, #00D5E2 86.52%);
+
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 240px;
+    right: 0;
+    width: 100vw;
+    height: 300px;
+
+  }
+ 
+  .searchInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .searchInput {
+    width:  400px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 23px;
+    margin-right: 20px;
+    color: #fff;
+    background-color: rgba(174, 204, 224, 0.5);
+    font-weight: bold;
+    background-image: url('../../assets/glass.svg');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 20px 20px; 
+  }
+  
+  .searchInput::placeholder{
+    color: #fff;
+  }
+  .searchButton {
+    background-color: #00D5E2;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 114px;
+    height: 40px;
+    border-radius: 23px;
+    font-weight:700;
+    font-size:medium; 
+  }
+  
+
+  .resultContainer {
+    text-align: center;
+  }
+  
+  .resultHeader {
+    margin-bottom: 10px;
+  }
+  
+  .resultMessage {
+    margin-top: 20px;
+  }
+  
+  .albumLink {
+    display: block;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .albumDetails {
+    margin-top: 10px;
+  }
+  
+  .albumImage {
+    max-width: 100%;
+    height: auto;
+  }
+  

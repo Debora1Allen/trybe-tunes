@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { UserType } from '../../types';
 import { getUser } from '../../services/userAPI';
 import styles from './Header.module.css';
+import glassDark from '../../assets/glassDark.svg';
+import favorite from '../../assets/favorite.svg';
+import profile from '../../assets/profile.svg';
 
 function Header() {
   const [user, setUser] = useState<UserType | null>(null);
@@ -30,13 +33,13 @@ function Header() {
   return (
     <header className={styles.header} data-testid="header-component">
     <NavLink to="/search" className={styles.link} data-testid="link-to-search">
-      <span className={styles.linkIcon}>🔍</span> Search
+      <span className={styles.linkIcon}><img src={glassDark}></img></span> Search
     </NavLink>
     <NavLink to="/favorites" className={styles.link} data-testid="link-to-favorites">
-      <span className={styles.linkIcon}>⭐</span> Favorites
+      <span className={styles.linkIcon}><img src={favorite}/></span> Favorites
     </NavLink>
     <NavLink to="/profile" className={styles.link} data-testid="link-to-profile">
-      <span className={styles.linkIcon}>👤</span> Profile
+      <span className={styles.linkIcon}><img src={profile}/></span> Profile
     </NavLink>
 
     <div className={styles.userSection} data-testid="header-user-name">
